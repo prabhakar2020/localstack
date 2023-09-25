@@ -31,3 +31,21 @@ OR
 
 ### Create a bucket
 ```aws --endpoint-url=http://localhost:4566 s3api create-bucket --bucket welcome --region us-east-1```
+
+### List down all Lambda functions
+```aws --endpoint-url=http://localhost:4566 lambda list-functions```
+
+## Use Terraform with localstack
+### Create aws localstack resources using terraform
+```
+terraform init -upgrade
+terraform apply
+```
+### Verify created resources in AWS localstack
+```
+aws --endpoint-url=http://localhost:4566 lambda list-functions
+aws --endpoint-url=http://localhost:4566 ec2 describe-instances
+```
+
+### Remove aws localstack resource using terraform
+```terraform destroy```

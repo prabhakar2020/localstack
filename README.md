@@ -22,6 +22,8 @@ export AWS_DEFAULT_REGION="us-east-1"
 
 ```aws --endpoint-url=http://localhost:4566 s3api```
 
+**Note**: Few of AWS regions will not work here. For testing purpose, you can choose either us-east-1 or us-west-1
+
 ### List down all S3 buckets
 ```awslocal s3api list-buckets --region us-east-1```
 

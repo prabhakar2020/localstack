@@ -25,6 +25,8 @@ export AWS_DEFAULT_REGION="us-east-1"
 ### List down all S3 buckets
 ```awslocal s3api list-buckets --region us-east-1```
 
+```awslocal s3api list-buckets --region us-east-1```
+OR
 ```aws --endpoint-url=http://localhost:4566 s3api list-buckets --region us-east-1```
 
 ### Create a bucket

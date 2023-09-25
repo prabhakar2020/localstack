@@ -39,6 +39,7 @@ OR
 
 ## Use Terraform with localstack
 ### Create aws localstack resources using terraform
+**Please refer terraform_script folder for sample terraform script**
 ```
 terraform init -upgrade
 terraform apply
